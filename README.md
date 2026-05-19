@@ -2,7 +2,7 @@
 
 SYNCUP is a production-grade, full-stack realtime application that allows admins to create coaching updates which instantly broadcast to all connected users. Built with scalability and best engineering practices in mind.
 
-## 🚀 Features
+## Features
 
 - **Realtime Broadcasting:** Feeds are pushed to all connected clients instantly without requiring a page refresh.
 - **High Performance Caching:** Utilizes Redis to aggressively cache the feed data, significantly reducing database load on `GET /feed` requests.
@@ -96,7 +96,7 @@ Visit `http://localhost:3000` to view the feed and `http://localhost:3000/admin`
 **Database:** MongoDB Atlas
 **Redis:** Upstash
 
-## ✅ Assessment Checklist
+## Assessment Checklist
 
 ### Mandatory Requirements
 
@@ -117,7 +117,7 @@ Visit `http://localhost:3000` to view the feed and `http://localhost:3000/admin`
 - [x] **8. Frontend Pages (Home Page & Admin Page).**
   - **Done:** `app/page.tsx` renders the Live Feed. `app/admin/page.tsx` handles the secure feed creation form.
 
-### ⭐ Bonus Requirements
+### Bonus Requirements
 
 - [x] **Handle reconnects**
   - **Done:** Configured the `useSocket` hook with Socket.IO's built-in `reconnection: true` mechanism. Added specific UI toast notifications so users know when they disconnect and successfully reconnect to the server.
@@ -133,7 +133,7 @@ Visit `http://localhost:3000` to view the feed and `http://localhost:3000/admin`
     3. **Hydration Error Fixed:** Addressed the common Next.js browser extension bug by appending `suppressHydrationWarning`.
     4. **Backend Error:** Configured a global `errorHandler.js` middleware that catches async crashes instead of killing the Node process.
 
-### 🧠 Evaluation Checkpoints
+### Evaluation Checkpoints
 
 - [x] **API understanding:** Clean RESTful architecture, proper HTTP status codes (200, 201, 400, 500).
 - [x] **Redis caching:** Proved an understanding of Redis TTLs and explicit cache invalidation logic upon data mutations.
